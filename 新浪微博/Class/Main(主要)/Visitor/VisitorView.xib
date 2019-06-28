@@ -83,6 +83,8 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="iocnView" destination="fuo-Zd-ie6" id="b05-tn-pL5"/>
+                <outlet property="loginBtn" destination="3Ra-mu-Jjr" id="307-IW-lvr"/>
+                <outlet property="registerBtn" destination="Q0q-zV-Y3y" id="dyG-bW-Yry"/>
                 <outlet property="rotationView" destination="tie-c3-tLx" id="u8L-JF-buM"/>
                 <outlet property="tipLabel" destination="e53-N5-Omn" id="skM-u5-3X3"/>
             </connections>

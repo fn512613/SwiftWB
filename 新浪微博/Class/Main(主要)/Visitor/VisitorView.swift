@@ -12,7 +12,9 @@ class VisitorView: UIView {
     @IBOutlet weak var rotationView: UIImageView!
     @IBOutlet weak var iocnView: UIImageView!
     @IBOutlet weak var tipLabel: UILabel!
+    @IBOutlet weak var registerBtn: UIButton!
     
+    @IBOutlet weak var loginBtn: UIButton!
     
     class func visitorView() -> VisitorView{
         return Bundle.main.loadNibNamed("VisitorView", owner: nil, options: nil)?.first as! VisitorView

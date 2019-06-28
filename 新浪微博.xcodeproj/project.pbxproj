@@ -22,6 +22,11 @@
 		CDF9802F22C5F1A400C57C91 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF9802E22C5F1A400C57C91 /* BaseViewController.swift */; };
 		CDF9803122C5F31C00C57C91 /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF9803022C5F31C00C57C91 /* VisitorView.swift */; };
 		CDF9803322C5F32D00C57C91 /* VisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDF9803222C5F32D00C57C91 /* VisitorView.xib */; };
+		CDF9803522C6090500C57C91 /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF9803422C6090500C57C91 /* UIBarButtonItem-Extension.swift */; };
+		CDF9803722C60E5300C57C91 /* TitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF9803622C60E5300C57C91 /* TitleButton.swift */; };
+		CDF9803B22C6121600C57C91 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF9803922C6121600C57C91 /* PopoverViewController.swift */; };
+		CDF9803C22C6121600C57C91 /* PopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDF9803A22C6121600C57C91 /* PopoverViewController.xib */; };
+		CDF9803E22C61DE100C57C91 /* QPPPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF9803D22C61DE100C57C91 /* QPPPresentationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +47,11 @@
 		CDF9802E22C5F1A400C57C91 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		CDF9803022C5F31C00C57C91 /* VisitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
 		CDF9803222C5F32D00C57C91 /* VisitorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VisitorView.xib; sourceTree = "<group>"; };
+		CDF9803422C6090500C57C91 /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
+		CDF9803622C60E5300C57C91 /* TitleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleButton.swift; sourceTree = "<group>"; };
+		CDF9803922C6121600C57C91 /* PopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
+		CDF9803A22C6121600C57C91 /* PopoverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopoverViewController.xib; sourceTree = "<group>"; };
+		CDF9803D22C61DE100C57C91 /* QPPPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QPPPresentationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +121,7 @@
 		CDF9801722C4AF4900C57C91 /* Home(首页) */ = {
 			isa = PBXGroup;
 			children = (
+				CDF9803822C611D200C57C91 /* UIPopover */,
 				CDF9801B22C4AF8F00C57C91 /* HomeViewController.swift */,
 			);
 			path = "Home(首页)";
@@ -152,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				CDF9802A22C5C10B00C57C91 /* Category */,
+				CDF9803622C60E5300C57C91 /* TitleButton.swift */,
 			);
 			path = "Tools(工具)";
 			sourceTree = "<group>";
@@ -160,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				CDF9802B22C5C13200C57C91 /* UIButton-Extension.swift */,
+				CDF9803422C6090500C57C91 /* UIBarButtonItem-Extension.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -172,6 +185,16 @@
 				CDF9803222C5F32D00C57C91 /* VisitorView.xib */,
 			);
 			path = Visitor;
+			sourceTree = "<group>";
+		};
+		CDF9803822C611D200C57C91 /* UIPopover */ = {
+			isa = PBXGroup;
+			children = (
+				CDF9803922C6121600C57C91 /* PopoverViewController.swift */,
+				CDF9803A22C6121600C57C91 /* PopoverViewController.xib */,
+				CDF9803D22C61DE100C57C91 /* QPPPresentationController.swift */,
+			);
+			path = UIPopover;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +257,7 @@
 			files = (
 				CDF9800C22C4AE7100C57C91 /* LaunchScreen.storyboard in Resources */,
 				CDF9803322C5F32D00C57C91 /* VisitorView.xib in Resources */,
+				CDF9803C22C6121600C57C91 /* PopoverViewController.xib in Resources */,
 				CDF9802422C4B30D00C57C91 /* Assets.xcassets in Resources */,
 				CDF9802722C4BF7100C57C91 /* MainVCSettings.json in Resources */,
 				CDF9800722C4AE6700C57C91 /* Main.storyboard in Resources */,
@@ -249,13 +273,17 @@
 			files = (
 				CDF9801622C4AE9E00C57C91 /* MainViewController.swift in Sources */,
 				CDF9800422C4AE6700C57C91 /* ViewController.swift in Sources */,
+				CDF9803B22C6121600C57C91 /* PopoverViewController.swift in Sources */,
+				CDF9803522C6090500C57C91 /* UIBarButtonItem-Extension.swift in Sources */,
 				CDF9801E22C4AFAF00C57C91 /* ProfileViewController.swift in Sources */,
+				CDF9803E22C61DE100C57C91 /* QPPPresentationController.swift in Sources */,
 				CDF9802022C4AFBC00C57C91 /* DiscoverViewController.swift in Sources */,
 				CDF9800222C4AE6700C57C91 /* AppDelegate.swift in Sources */,
 				CDF9802F22C5F1A400C57C91 /* BaseViewController.swift in Sources */,
 				CDF9801C22C4AF8F00C57C91 /* HomeViewController.swift in Sources */,
 				CDF9803122C5F31C00C57C91 /* VisitorView.swift in Sources */,
 				CDF9802222C4AFC700C57C91 /* MessageViewController.swift in Sources */,
+				CDF9803722C60E5300C57C91 /* TitleButton.swift in Sources */,
 				CDF9802C22C5C13200C57C91 /* UIButton-Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
